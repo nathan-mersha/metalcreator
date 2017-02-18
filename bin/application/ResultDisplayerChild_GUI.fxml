@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="1211.0" prefWidth="1290.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="pointName" layoutX="8.0" layoutY="5.0" prefHeight="20.0" prefWidth="306.0" text="Point Name" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="34.0" prefHeight="17.0" prefWidth="88.0" text="Initial Inputs" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="input_table" layoutX="8.0" layoutY="59.0" prefHeight="76.0" prefWidth="1275.0">
+        <columns>
+          <TableColumn prefWidth="255.0" text="Composition" />
+          <TableColumn prefWidth="203.0" text="Temprature" />
+            <TableColumn prefWidth="165.0" text="Cooling Time (*c/sec)" />
+            <TableColumn minWidth="0.0" prefWidth="162.66668701171875" text="On-Phase Name" />
+            <TableColumn prefWidth="239.33331298828125" text="Left Fraction" />
+            <TableColumn prefWidth="259.66668701171875" text="Right Fraction" />
+        </columns>
+      </TableView>
+      <Label layoutX="16.0" layoutY="368.0" prefHeight="17.0" prefWidth="88.0" text="Notes" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="note" layoutX="13.0" layoutY="404.0" prefHeight="216.0" prefWidth="436.0" />
+      <Label layoutX="7.0" layoutY="178.0" prefHeight="19.0" prefWidth="123.0" text="Computed Results" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="output_table" layoutX="8.0" layoutY="203.0" prefHeight="146.0" prefWidth="1275.0">
+        <columns>
+          <TableColumn prefWidth="92.0" text="\@ Temp Point" />
+            <TableColumn prefWidth="95.0" text="Enthalpy" />
+          <TableColumn prefWidth="95.0" text="Density" />
+            <TableColumn minWidth="8.333328247070312" prefWidth="134.0" text="Thermal Conductivity" />
+            <TableColumn prefWidth="110.0" text="Liquid Viscosity" />
+            <TableColumn prefWidth="216.0" text="Surface Tension B/n Liquid and Air" />
+            <TableColumn prefWidth="182.0" text="Solid/Liquid interface energy" />
+            <TableColumn prefWidth="190.0" text="Second Dendrite Arm Spacing" />
+            <TableColumn prefWidth="160.0" text="Austenite Grain Size" />
+        </columns>
+      </TableView>
+      <AreaChart layoutX="439.0" layoutY="391.0" prefHeight="260.0" prefWidth="402.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </AreaChart>
+      <Label layoutX="484.0" layoutY="371.0" prefHeight="19.0" prefWidth="162.0" text="Density" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <AreaChart layoutX="872.0" layoutY="389.0" prefHeight="260.0" prefWidth="402.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </AreaChart>
+      <Label layoutX="916.0" layoutY="368.0" prefHeight="19.0" prefWidth="162.0" text="Thermal Conductivity" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="642.0" prefHeight="19.0" prefWidth="162.0" text="Liquid Viscosity" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <AreaChart layoutX="6.0" layoutY="663.0" prefHeight="260.0" prefWidth="402.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </AreaChart>
+      <AreaChart layoutX="439.0" layoutY="662.0" prefHeight="260.0" prefWidth="402.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </AreaChart>
+      <Label layoutX="484.0" layoutY="642.0" prefHeight="19.0" prefWidth="226.0" text="Surface Tension B/n Liquid and Air" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <AreaChart layoutX="872.0" layoutY="660.0" prefHeight="260.0" prefWidth="402.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </AreaChart>
+      <Label layoutX="916.0" layoutY="639.0" prefHeight="19.0" prefWidth="198.0" text="Solid/Liquid Interface Energy" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="923.0" prefHeight="19.0" prefWidth="207.0" text="Second Dendrite Arm Spacing" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <AreaChart layoutX="6.0" layoutY="944.0" prefHeight="260.0" prefWidth="402.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </AreaChart>
+      <AreaChart layoutX="439.0" layoutY="943.0" prefHeight="260.0" prefWidth="402.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </AreaChart>
+      <Label layoutX="484.0" layoutY="923.0" prefHeight="19.0" prefWidth="142.0" text="Austenite Grain Size" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <AreaChart layoutX="872.0" layoutY="942.0" prefHeight="260.0" prefWidth="402.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </AreaChart>
+      <Label layoutX="916.0" layoutY="921.0" prefHeight="19.0" prefWidth="198.0" text="Enthalpy" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>

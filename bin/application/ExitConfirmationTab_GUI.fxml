@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="76.0" maxWidth="215.0" minHeight="71.0" minWidth="202.0" prefHeight="76.0" prefWidth="202.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="45.0" layoutY="7.0" prefHeight="27.0" prefWidth="160.0" text="Exit Phase Diagram ?" textFill="#2c2929">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="exit" layoutX="46.0" layoutY="46.0" mnemonicParsing="false" onAction="#buttonAction" prefHeight="25.0" prefWidth="66.0" text="Exit" />
+      <ImageView fitHeight="65.0" fitWidth="19.0" layoutX="10.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/rsr/warningSign.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="cancel" layoutX="121.0" layoutY="46.0" mnemonicParsing="false" onAction="#buttonAction" prefHeight="25.0" prefWidth="68.0" text="Cancel" />
+   </children>
+</fx:root>
